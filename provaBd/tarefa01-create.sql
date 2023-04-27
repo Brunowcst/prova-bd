@@ -1,5 +1,5 @@
 CREATE TABLE funcionario (
-  codigo INT PRIMARY KEY,
+  codigo SERIAL PRIMARY KEY,
   nome VARCHAR(50),
   sexo CHAR(1),
   dt_nasc DATE,
@@ -8,14 +8,14 @@ CREATE TABLE funcionario (
 );
 
 CREATE TABLE departamento (
-  codigo INT PRIMARY KEY,
+  codigo SERIAL PRIMARY KEY,
   descricao VARCHAR(50),
   cod_gerente INT,
-  FOREIGN KEY (cod_gerente) REFERENCES funcionario(codigo)
+  FOREIGN KEY (cod_gerente) REFERENCES funcionario(codigo)                                               
 );
 
 CREATE TABLE projeto (
-  codigo INT PRIMARY KEY,
+  codigo SERIAL PRIMARY KEY,
   nome VARCHAR(50),
   descricao VARCHAR(100),
   cod_depto INT,
@@ -27,7 +27,7 @@ CREATE TABLE projeto (
 );
 
 CREATE TABLE atividade (
-  codigo INT PRIMARY KEY,
+  codigo SERIAL PRIMARY KEY,
   nome VARCHAR(50),
   descricao VARCHAR(100),
   cod_responsavel INT,
