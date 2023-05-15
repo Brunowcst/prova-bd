@@ -1,4 +1,4 @@
--- Function
+-- Function(necessário ter as funções da QA.sql e QB.sql criadas)
 
 CREATE OR REPLACE FUNCTION idade_maior_media_depto()
 RETURNS TABLE (codigo INTEGER, nome CHARACTER VARYING, idade INT)
