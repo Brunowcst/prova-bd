@@ -23,4 +23,4 @@ $$;
 
 SELECT qnt_atividades(4, 2)
 
--- Retornará quantidade de atividades do funcionário de código feitas no projeto de código 2.
+-- Retornará quantidade de atividades do funcionário de código 4 feitas no projeto de código 2.
